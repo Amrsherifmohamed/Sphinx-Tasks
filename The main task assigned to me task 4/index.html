@@ -1,0 +1,147 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Educational RC</title>
+    <link rel="stylesheet" type="text/css" href="Css/main.css" />
+</head>
+
+<body>
+
+    <div id="contant">
+        <div id="outer">
+            <div class="Loader hidden">
+                <img src="assests/Spin-Preloader-1.gif">
+            </div>
+            <!-- -------------------------------------------------- -->
+            <div class="header">
+                <div class="d-flex">
+
+                    <div class="col-xs-11">
+                        <h1 style="font-size: 31px;font-weight: lighter; margin-left: 23px;">What’s in the basket? Choose and write.</h1>
+                    </div>
+                    <div class="fisrt_photo">
+                        <div id="resourse">
+                            <img style="cursor: pointer; " src="assests/resourse_icon.png " class="img-responsive ">
+                        </div>
+                    </div>
+                    <div class="second_photo">
+                        <div id="resourse2">
+                            <img style="cursor: pointer; " src="assests/help_icon.png " class="img-responsive ">
+                        </div>
+                    </div>
+                </div>
+                <audio id="audioincorrect" preload="auto " src="assests/incorrect.mp3"></audio>
+                <audio id="audiocorrect" preload="auto " src="assests/correct.mp3"></audio>
+            </div>
+            <!-- ----------------------------------------------------------- -->
+
+            <div class="d-flex justify-content-center mt-4 makeHover">
+
+                <div class="d-flex justify-content-center first_layout">
+
+                    <div class="d-flex second_layout">
+                        <div id="qunteinerspan" class="questionContainer">
+                            <span class="question question_1" data-answer="incorrect">scissors</span>
+                            <span class="question question_2" data-answer="correct">eraser</span>
+                            <span class="question question_3" data-answer="correct">ruler</span>
+                            <span class="question question_4" data-answer="incorrect">bag</span><br>
+                            <span class="question question_5" data-answer="incorrect">pencil case</span>
+                            <span class="question question_6" data-answer="correct">pencil</span>
+                            <span class="question question_7" data-answer="correct">book</span>
+                            <span class="question question_8" data-answer="correct">pen</span>
+                        </div>
+                        <img class="back_ground_photo" src="assests/p15e11.png " class="img-responsive ">
+                        <div class="col-xs-12 fill_space">
+                            <div class="col-xs-4 first_columan_fill">
+                                <div class="first_space">
+                                    <span class="text_complete"></span>
+                                    <div>
+                                        <img id="cross1" src="assests/crossMark-small.png " class="img-responsive mark_position1">
+                                        <img id="right1" src="assests/tikMark-small.png " class="img-responsive mark_position_right1">
+                                    </div>
+                                </div>
+                                <div class="second_space">
+                                    <span class="text_complete2"></span>
+                                    <div>
+                                        <img src="assests/crossMark-small.png " class="img-responsive mark_position2 ">
+                                        <img src="assests/tikMark-small.png " class="img-responsive mark_position_right2 ">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-4 second_columan_fill">
+                                <div class="first_space2">
+                                    <span class="text_complete3"></span>
+                                    <div class="move_marker3">
+                                        <img src="assests/crossMark-small.png " class="img-responsive mark_position3 ">
+                                        <img src="assests/tikMark-small.png " class="img-responsive mark_position_right3 ">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-4 theerd_columan_fill">
+                                <div class="first_space3">
+                                    <span class="text_complete4"></span>
+                                    <div class="move_marker4">
+                                        <img src="assests/crossMark-small.png " class="img-responsive mark_position4 ">
+                                        <img src="assests/tikMark-small.png " class="img-responsive mark_position_right4 ">
+                                    </div>
+                                </div>
+                                <div class="second_space3">
+                                    <span class="text_complete5"></span>
+                                    <div class="move_marker4">
+                                        <img src="assests/crossMark-small.png " class="img-responsive mark_position5 ">
+                                        <img src="assests/tikMark-small.png " class="img-responsive mark_position_right5 ">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- ----------------------------------------- -->
+            <div id="footer_up">
+                <div class="d-flex align-items-center reset_botton">
+                    <img id="button_reply" class="replay_icon" onclick="reset()" src="assests/replay_icon (1).png" alt="reply">
+                    <img class="view_icon" onclick="showanser()" src="assests/showAns_icon.png" alt="reply" style="cursor: pointer;">
+                </div>
+            </div>
+            <!-- -------------------------------------------------------- -->
+            <div class="d-flex justify-content-center mt-4 makeHover">
+                <div class="d-flex justify-content-center">
+                    <div class="d-flex justify-content-center">
+                        <div id="resourse_icon">
+                            <img id="dummy" src="assests/dummy.jpg">
+                            <img id="close" src="assests/close_icon.png" style="    width: 50px;
+                            height: 50px;
+                            cursor: pointer;
+                            position: relative;
+                            bottom: 662px;
+                            left: 30px;">
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <div id="resourse_icon2">
+                            <div id="dummy2" class="prad_in_second">
+                                <p>Help content goes here.</p>
+                            </div>
+                            <img id="close2" src="assests/close_icon.png" style="
+                            width: 50px;
+                            height: 50px;
+                            cursor: pointer;
+                            position: relative;
+                            bottom: 740px;
+                            left: 1030px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ------------------------------------------------------------- -->
+        </div>
+    </div>
+</body>
+<script src="JS/main.js "></script>
+
+</html>

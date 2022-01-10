@@ -1,0 +1,130 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Educational RC</title>
+    <link rel="stylesheet" type="text/css" href="Css/main.css" />
+</head>
+
+<body>
+    <div id="contant">
+        <div id="outer">
+            <div class="Loader hidden">
+                <img src="assets/reload.gif">
+            </div>
+            <!-- ---------------------------------------------------------->
+            <div style="background-color: white;">
+                <div style="width: 1128px; height: 60px;">
+                    <div></div>
+                    <div class="col-xs-11">
+                        <h1 style="font-size: 31px;font-weight: lighter; margin-left: 23px;">Complete the words.</h1>
+                    </div>
+                    <div class="fisrt_photo">
+                        <div id="resourse">
+                            <img style="cursor: pointer;" src="assets/resourse_icon.png" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="second_photo">
+                        <div id="resourse2">
+                            <img style="cursor: pointer;" src="assets/help_icon.png" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
+                <audio id="audioincorrect" preload="auto" src="assets/incorrect.mp3"></audio>
+                <audio id="audiocorrect" preload="auto" src="assets/correct.mp3"></audio>
+            </div>
+            <!-- ---------------------------------------------------- -->
+            <div class="justify-content-center mt-4 makeHover">
+
+                <div class="justify-content-center first_layout">
+
+                    <div class="second_layout">
+
+                        <div class="questionContainer">
+                            <span class="question quation_a">a</span>
+                            <span class="question quation_b">p</span>
+                        </div>
+                        <div class="d-flex first_photo_choose" style="text-decoration: none;">
+                            <div class="text_1 ">
+                                <span style="cursor: default;">1 t</span>
+                                <span class="first_span_a1">
+                                <span class="background" style="cursor: pointer;">__</span>
+                                <span class="shift" style="cursor: pointer;">q</span>
+                                </span>
+                                <img id="theImage1" class="mark1 show_1" src="assets/tikMark-small.png">
+                                <img id="theImage1_1" class="mark1 show_2" src="assets/crossMark-small.png">
+                                <span style="position: relative;right: 142px;top: 1px; cursor: default;">P</span>
+                            </div>
+                            <img src="assets/p19ex24q1_1.png" alt="q1" style="height: 170px; position: relative; left: 91px;">
+                        </div>
+                        <div class="d-flex second_photo_choose " style="text-decoration: none;">
+                            <div class="text_2 text1_span" style="cursor: pointer;">
+                                <span style="cursor: default;"> 2</span>
+                                <span class="first_span_b1">
+                                <span style="cursor: pointer;">__</span>
+                                <span class="shift2">q</span>
+                                </span>
+                                <img id="theImage2" class="mark1 show_3" src="assets/tikMark-small.png">
+                                <img id="theImage1_2" class="mark1 show_4" src="assets/crossMark-small.png">
+                                <span style="position: relative;right: 142px;cursor: default;">a t</span>
+                            </div>
+                            <img src="assets/p19ex24q1_2.png" alt="q2" style="position: relative;bottom: 140px; left: 761px;">
+                        </div>
+                        <div class="d-flex threed_photo_choose text_2 " style="text-decoration: none; position: relative;bottom: 51px;width: 165px;height: 63px;">
+                            <div class="text_span" style="cursor: pointer;">
+                                <span style="cursor: default;">3 m</span>
+                                <span class="first_span_a12">
+                                <span style="cursor: pointer;">__</span>
+                                <span class="shift3">q</span>
+                                </span>
+                                <img id="theImage3" class="mark1 show_5" src="assets/tikMark-small.png">
+                                <img id="theImage1_3" class="mark1 show_6" src="assets/crossMark-small.png">
+                                <span class="span_p" style="cursor: default;">P</span>
+                            </div>
+                            <img class="imghover" src="assets/p19ex24q1_3.png" alt="q2" style="position: relative;bottom: 89px;right: 48px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ---------------------------------------------------------------- -->
+            <div id="footer_up" class="d-flex justify-content-center">
+                <div class="d-flex align-items-center reset_botton">
+                    <img id="button_reply" class="mx-4 replay_icon" onclick="reset()" src="assets/replay_icon (1).png" alt="reply" style="cursor: pointer; position: relative; top: 27px;  width: 73px;left: 83px;">
+                    <a id="button_view" onclick="showresult()">
+                        <img class="view_icon" src="assets/showAns_icon.png" alt="reply" style="cursor: pointer;">
+                    </a>
+                </div>
+            </div>
+
+            <!-- -------------------------------------------------------------------------- -->
+
+            <div class="d-flex justify-content-center mt-4 makeHover">
+
+                <div class="d-flex justify-content-center">
+                    <div class="d-flex justify-content-center">
+                        <div id="resourse_icon">
+                            <img id="dummy" src="assets/dummy.jpg">
+                            <img id="close" src="assets/close_icon.png" style="width: 50px;height: 50px;cursor: pointer;position: relative;bottom: 664px;">
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center">
+                        <div id="resourse_icon2">
+                            <div id="dummy2" class="prad_in_second">
+                                <p>Help content goes here.</p>
+                            </div>
+                            <img id="close2" src="assets/close_icon.png" style="width: 50px;height: 50px;cursor: pointer;position: relative;bottom: 735px;left: 1007px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ----------------------------------------------------- -->
+        </div>
+    </div>
+
+</body>
+<script src="JS/main.js"></script>
+
+</html>
